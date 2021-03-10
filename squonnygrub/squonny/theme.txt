@@ -1,0 +1,58 @@
+# Squonny GRUB theme
+# Some rights reserved. This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License.
+
+# background image is meant to be something with a bright top and bigger than screen resolution thus croped equally left and right and bottom
+desktop-image: "background.png"
+desktop-image-scale-method: "crop"
+desktop-image-v-align: "top"
+
+# colors n fonts
+title-text: "How do you want to boot?"
+title-font: "Hack 18"
+title-color: "#0F260F"
+message-font: "Hack 18"
+message-color: "#0F260F"
+terminal-font: "Hack 18"
+terminal-box: "terminal_*.png"
+
++ boot_menu {
+  left = 30%
+  width = 40%
+  top = 10%
+  height = 33%
+
+  menu_pixmap_style = "boot_menu_*.png"
+
+  item_font = "Hack 22"
+  item_color = "#0E360E"
+  item_height = 48
+  item_icon_space = 10
+  item_spacing = 5
+  item_padding = 5
+
+  selected_item_font = "Hack 22"
+  selected_item_color= "#154D15"
+  selected_item_pixmap_style = "select_*.png"
+
+  icon_height = 50
+  icon_width = 50
+
+  scrollbar = true
+  scrollbar_width = 15
+  scrollbar_thumb = "slider_*.png"
+}
+
++ progress_bar {
+  id = "__timeout__"
+  text = "@TIMEOUT_NOTIFICATION_SHORT@"
+
+  left = 95%
+  width = 48
+  top = 95%
+  height = 48
+
+  text_color = "#0F260F"
+
+  bar_style = "*"
+  highlight_style = "*"
+}

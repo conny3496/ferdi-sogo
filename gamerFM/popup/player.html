@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>GamerFM Player</title>
+  <!-- <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'> -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" media="all" href="styles.css" />
+  <style>
+  </style>
+</head>
+
+<body>
+  <div id="player-container">
+    <div id="bg-artwork"></div>
+    <div id="bg-layer"></div>
+    <div id="player">
+      <div id="player-track">
+        <div id="track-name"></div>
+        <div id="artist-name"></div>
+        <div id="track-time">
+          <div id="current-time"></div>
+          <div id="track-length"></div>
+        </div>
+        <div id="s-area">
+          <div id="ins-time"></div>
+          <div id="s-hover"></div>
+          <div id="seek-bar"></div>
+        </div>
+      </div>
+      <div id="player-content">
+        <div id="album-art">
+          <img src="../logos/48.png" class="active" id="coverImage">
+          <div id="buffer-box">Buffering ...</div>
+        </div>
+        <div id="player-controls">
+          <div class="control">
+            <span id="volumeButton"><i><span class="material-icons md-18">volume_up</span></i></span>
+            <span id="volume">
+              <div class="vcontrol">
+              </div>
+            </span>
+          </div>
+          <div class="control-spacer">
+          </div>
+          <div class="control">
+            <div class="button" id="play-previous">
+              <i><span class="material-icons md-36">replay_10</span></i>
+            </div>
+          </div>
+          <div class="control">
+            <div class="button" id="play-pause-button">
+              <i><span class="material-icons md-36">play_arrow</span></i>
+            </div>
+          </div>
+          <div class="control">
+            <div class="button" id="play-next">
+              <i><span class="material-icons md-36">last_page</span></i>
+            </div>
+          </div>
+          <div class="control">
+            <div class="button" id="stopButton">
+              <i><span class="material-icons md-36">close</span></i>
+            </div>
+          </div>
+          <!-- <div class="control">
+            <div class="button" id="reinitializeButton">
+              <i><span class="material-icons md-36">refresh</span></i>
+            </div>
+          </div> -->
+          <div class="control-spacer">
+          </div>
+          <div class="miscellaneous">
+            <div class="button" id="modeSwitcher">
+              <i><span class="material-icons">dark_mode</span></i>
+            </div>
+            <a href="#colorPicker">
+              <div class="button" id="changeRGB">
+                <i><span class="material-icons">color_lens</span></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="colorPicker" class="overlay">
+      <div class="popup">
+        <div class="flex-left"></div>
+        <div class="content">
+          <div id="picker"></div>
+        </div>
+        <div class="miscellaneous">
+          <div class="button" id="closePicker">
+            <a href="#"><span class="material-icons">close</span></a>
+          </div>
+          <div class="button" id="revertPicker">
+            <i><img src="../logos/32.png" style="width:24px;"></i>
+          </div>
+          <div class="button" id="applyPicker">
+            <a href="#"><span class="material-icons">done</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src="./iro5.js"></script>
+    <script src="./plugin.js"></script>
+    <script src="./volume.js"></script>
+</body>
+
+</html>
