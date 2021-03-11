@@ -425,7 +425,7 @@ function fetchXMLforMBID(trackTitle, trackArtist) {
   console.debug(thisTrackTitle)
   // var queryURL = "http://musicbrainz.org/ws/2/release/?query=release:%22" + thisTrackTitle + "%22%20OR%20artist:%22" + thisTrackArtist + "%22";
   // var queryURL = "http://musicbrainz.org/ws/2/release/?query=release:%22" + thisTrackTitle + "%22%20AND%20artist:%22" + thisTrackArtist + "%22";
-  var queryURL = "http://musicbrainz.org/ws/2/release/?query=title:" + thisTrackTitle + "%20AND%20artist:" + thisTrackArtist;
+  var queryURL = "https://musicbrainz.org/ws/2/release/?query=title:" + thisTrackTitle + "%20AND%20artist:" + thisTrackArtist;
   console.debug('queryURL: ' + queryURL);
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
