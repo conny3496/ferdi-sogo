@@ -451,7 +451,7 @@ function fetchMBID(xml) {
       document.getElementById("coverImage").src = "../logos/48.png";
       fetchXMLforMBID(trackTitle, trackArtist);
       if (trackMBID) {
-          loadCover("http://coverartarchive.org/release/" + trackMBID);
+          loadCover("https://coverartarchive.org/release/" + trackMBID);
       }
     } else {
       console.debug('trackChanged was ' + trackChanged);
