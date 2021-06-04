@@ -1,0 +1,180 @@
+
+Result Size: 1548 x 1514
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<style>
+
+* {
+
+  box-sizing: border-box;
+
+}
+
+​
+
+.head {
+
+    background-color: lightgreen;
+
+}
+
+​
+
+.flex-container {
+
+  display: flex;
+
+  flex-direction: row;
+
+  font-size: 30px;
+
+  text-align: center;
+
+}
+
+​
+
+.flex-item-left {
+
+  background-color: green;
+
+  padding: 10px;
+
+  flex: 66%;
+
+}
+
+​
+
+.flex-item-right {
+
+  background-color: red;
+
+  padding: 10px;
+
+  flex: 34%;
+
+}
+
+​
+
+.flex-3item-left {
+
+  background-color: #11ff11;
+
+  padding: 10px;
+
+  flex: 66%;
+
+}
+
+.flex-3item-mid {
+
+  background-color: #11ffaa;
+
+  padding: 10px;
+
+  flex: 66%;
+
+}
+
+.flex-3item-right {
+
+  background-color: #11ffdd;
+
+  padding: 10px;
+
+  flex: 66%;
+
+}
+
+​
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+
+@media (max-width: 800px) {
+
+  .flex-container {
+
+    flex-direction: column;
+
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+​
+
+<p class="head">Welcome!</p>
+
+​
+
+<p>
+
+  <div class="flex-container">
+
+    <div class="flex-item-left">
+
+      <div>Marsch
+
+      </div>
+
+      <div class="flex-container">
+
+        <div class="flex-item-left">Lipp
+
+        </div>
+
+        <div class="flex-item-right">Nowk
+
+        </div>
+
+       </div>
+
+    </div>
+
+    <div class="flex-item-right">Paul</div>
+
+  </div>
+
+</p>
+
+​
+
+<p>
+
+  <div class="flex-container">
+
+      <div class="flex-3item-left">Haken Quali
+
+      </div>
+
+      <div class="flex-3item-mid">Haken Send
+
+      </div>
+
+      <div class="flex-3item-right">Haken Cost
+
+      </div>
+
+  </div>
+
+</p>
+
+​
+
+</body>
+
+</html>
+
+​
