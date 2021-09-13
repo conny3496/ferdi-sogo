@@ -1,0 +1,15 @@
+{
+  "id": "sogo",
+  "name": "SOGo",
+  "version": "0.1.2",
+  "description": "Interface for servers runnung SOGo Mail.",
+  "main": "index.js",
+  "author": "Cornelius Gillner <>",
+  "license": "MIT",
+  "repository": "tdb.",
+  "config": {
+    "hasNotificationSound": false,
+    "hasIndirectMessages": false,
+    "hasCustomUrl": true
+  }
+}
